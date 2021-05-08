@@ -27,17 +27,22 @@
         <p class="faq-answer"><span class="prim-color-strong">Nein.</span> Allerdings benötigt die App, um im vollem Umfang genutzt 
             werden zu können, <span class="prim-color-strong">Internetzugang</span>.</p>
     </div>
+      <ion-fab vertical="bottom" horizontal="start" slot="fixed">
+        <ion-fab-button router-link="/dash/">
+            <p class="fab-text">back</p>
+        </ion-fab-button>
+      </ion-fab>
     </ion-content>
   </ion-page>
 </template>
 
 <script>
 import {
-  IonPage, IonContent,
+  IonPage, IonContent, IonFab, IonFabButton,
 } from "@ionic/vue";
 export default {
   components: { 
-    IonPage, IonContent
+    IonPage, IonContent, IonFab, IonFabButton
   }
 }
 </script>

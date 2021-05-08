@@ -120,3 +120,70 @@
     height: 2px;
     background: #887267;
 }
+/* FAQ */
+.fab-text {
+    text-align: center;
+}
+/* Home */
+#container {
+    text-align: center;
+    position: absolute;
+    color: #000;
+    left: 0;
+    right: 0;
+    top: 30%;
+    transform: translateY(-30%);
+  }
+  #container .mind-match-logo{
+    width: 94%;
+    max-width: 500px;
+    margin: 14px auto;
+  }
+  #container .headline p{
+    margin-top: 40px;
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 22px;
+  }
+  #container p {
+    font-size: 26px;
+    line-height: 30px;
+    margin: auto;
+    max-width: 80%;
+  }
+  #container .button-login,
+  #container .button-register {
+    color: #000;
+    height: 2.2em;
+    font-weight: 900;
+    font-size: 1.5em;
+    width: 60%;
+    max-width: 260px;
+    font-family: 'Gill Sans', 'Gill Sans MT', sans-serif;
+  }
+  #container .button-login {
+    margin: 44px auto 12px;
+  }
+  #container .button-register {
+    margin: 20px auto 12px;
+  }
+  #container .button-faq {
+    margin: 60px auto 12px;
+    width: 50%;
+    color: #000;
+    height: 1.8em;
+    font-weight: 600;
+    font-size: 1em;
+    max-width: 260px;
+    font-family: 'Gill Sans', 'Gill Sans MT', sans-serif;
+  }
+  footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+  footer p {
+    text-align: center;
+    font-size: 13px;
+  }

@@ -1,78 +1,42 @@
 <template>
   <ion-page>
-    <ion-content :fullscreen="true">    
-      <div class="dashboard-container">
+    <ion-content :fullscreen="true">
+    <div id="container">
+        <div class="headline">
           <img class="mind-match-logo" src="../assets/image/logo.png" />
-          <ion-grid>
-              <ion-row class="dashboard-row">
-                  <ion-col>
-                      <ion-card class="dashboard-card" button="true">
-                          <ion-item>
-                              <img src="../assets/image/matches-logo.png" />
-                              <ion-label class="dashboard-label">Matches</ion-label>
-                          </ion-item>
-                       </ion-card>
-                  </ion-col>
-              </ion-row> 
-              <ion-row class="dashboard-row">
-                  <ion-col>
-                      <ion-card class="dashboard-card" button="true"> 
-                        <ion-item>
-                        <img src="../assets/image/forgot-pw.png" />
-                          <ion-label class="dashboard-label">Mindset-Fragen</ion-label>
-                        </ion-item>
-                      </ion-card>
-                  </ion-col>
-                </ion-row>
-                <ion-row class="dashboard-row">
-                  <ion-col>
-                        <ion-card class="dashboard-card" button="true">
-                          <ion-item>
-                          <img src="../assets/image/profil-logo.png" />
-                            <ion-label class="dashboard-label">Dein Profil</ion-label>
-                          </ion-item>
-                        </ion-card>
-                    </ion-col>
-                </ion-row>
-                <ion-row class="dashboard-row">
-                  <ion-col>
-                        <ion-card class="dashboard-card" button="true">
-                          <ion-item>
-                          <img src="../assets/image/pref-logo.png" />
-                            <ion-label class="dashboard-label">Einstellungen</ion-label>
-                          </ion-item>
-                        </ion-card>
-                    </ion-col>
-                </ion-row>
-                <ion-row class="dashboard-row">
-                  <ion-col>
-                        <ion-card class="dashboard-card" button="true" router-link="/faq/">
-                          <ion-item>
-                          <img src="../assets/image/faq-logo.png" />
-                            <ion-label class="dashboard-label">FAQ</ion-label>
-                          </ion-item>
-                        </ion-card>
-                    </ion-col>
-                </ion-row>
-            </ion-grid>
+          <p>Entdecke Personen, welche so denken wie Du!</p>
         </div>
-        <div class="logout">
-          <ion-button class="button-logout">
-            <ion-icon name="caret-back-outline"></ion-icon>
-            <p>Logout</p>
+        <div>
+          <ion-button router-link="/login" class="button-login">
+            Login
           </ion-button>
         </div>
+
+        <div>
+          <ion-button router-link="/register" class="button-register">
+            Register
+          </ion-button>
+        </div>
+
+        <div>
+          <ion-button router-link="/faq" class="button-faq">
+            Was ist Mind Match?
+          </ion-button>
+        </div>
+      </div>
+      <footer>
+      </footer>
     </ion-content>
   </ion-page>
 </template>
 
 <script>
 import {
-  IonPage, IonContent, IonIcon, IonRow, IonLabel, IonButton, IonItem, IonCard, IonGrid, IonCol,
+  IonPage, IonContent, IonButton,
 } from "@ionic/vue";
 export default {
   components: { 
-    IonPage, IonContent, IonIcon, IonRow, IonLabel, IonButton, IonItem, IonCard, IonGrid, IonCol
+    IonPage, IonContent, IonButton
   }
 }
 </script>
