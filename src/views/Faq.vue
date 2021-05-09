@@ -28,7 +28,7 @@
             werden zu können, <span class="prim-color-strong">Internetzugang</span>.</p>
     </div>
       <ion-fab vertical="bottom" horizontal="start" slot="fixed">
-        <ion-fab-button router-link="/dash/">
+        <ion-fab-button router-link="/home/">
             <p class="fab-text">back</p>
         </ion-fab-button>
       </ion-fab>

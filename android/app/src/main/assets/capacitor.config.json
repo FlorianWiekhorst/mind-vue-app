@@ -1,6 +1,6 @@
 {
-  "appId": "io.ionic.starter",
-  "appName": "mind-vue-app",
+  "appId": "com.mindmatch.vue.app",
+  "appName": "mind-match-app",
   "bundledWebRuntime": false,
   "npmClient": "npm",
   "webDir": "dist",

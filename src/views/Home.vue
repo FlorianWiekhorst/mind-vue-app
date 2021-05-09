@@ -7,19 +7,19 @@
           <p>Entdecke Personen, welche so denken wie Du!</p>
         </div>
         <div>
-          <ion-button router-link="/login" class="button-login">
+          <ion-button router-link="/login/" class="button-login">
             Login
           </ion-button>
         </div>
 
         <div>
-          <ion-button router-link="/register" class="button-register">
+          <ion-button router-link="/register/" class="button-register">
             Register
           </ion-button>
         </div>
 
         <div>
-          <ion-button router-link="/faq" class="button-faq">
+          <ion-button router-link="/faq/" class="button-faq">
             Was ist Mind Match?
           </ion-button>
         </div>

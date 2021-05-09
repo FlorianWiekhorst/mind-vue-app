@@ -3,7 +3,7 @@
     <ion-content>
 
       <ion-fab vertical="bottom" horizontal="start" slot="fixed">
-        <ion-fab-button router-link="/dash/">
+        <ion-fab-button router-link="/settings">
             <p class="fab-text">back</p>
         </ion-fab-button>
       </ion-fab>

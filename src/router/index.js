@@ -9,6 +9,8 @@ import Register from '../views/Register.vue'
 import Settings from '../views/Settings.vue'
 import Profil from '../views/Profil.vue'
 import Feedback from '../views/Feedback.vue'
+import Forgotpw from '../views/Forgotpw.vue'
+import Member from '../views/Member.vue'
 
 const routes = [
   {
@@ -61,9 +63,19 @@ const routes = [
     component: Settings
   },
   {
+    path: '/forgotpw',
+    name: 'Forgotpw',
+    component: Forgotpw
+  },
+  {
     path: '/feedback',
     name: 'Feedback',
     component: Feedback
+  },
+  {
+    path: '/member',
+    name: 'Member',
+    component: Member
   }
 ]
 
