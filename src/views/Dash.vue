@@ -44,13 +44,16 @@
                         </ion-card>
                     </ion-col>
                 </ion-row>
+                 <ion-row class="dashboard-row">
+                  <ion-col>
+                        <ion-card class="dashboard-card" button="true" router-link="/home/">
+                          <ion-item class="logout-card">
+                            <ion-label>Logout</ion-label>
+                          </ion-item>
+                        </ion-card>
+                    </ion-col>
+                </ion-row>
             </ion-grid>
-        </div>
-        <div class="logout">
-          <ion-button class="button-logout" router-link="/home/">
-            <ion-icon name="caret-back-outline"></ion-icon>
-            <p>Logout</p>
-          </ion-button>
         </div>
     </ion-content>
   </ion-page>
@@ -58,11 +61,11 @@
 
 <script>
 import {
-  IonPage, IonContent, IonIcon, IonRow, IonLabel, IonButton, IonItem, IonCard, IonGrid, IonCol,
+  IonPage, IonContent, IonRow, IonLabel, IonItem, IonCard, IonGrid, IonCol,
 } from "@ionic/vue";
 export default {
   components: { 
-    IonPage, IonContent, IonIcon, IonRow, IonLabel, IonButton, IonItem, IonCard, IonGrid, IonCol
+    IonPage, IonContent, IonRow, IonLabel, IonItem, IonCard, IonGrid, IonCol
   }
 }
 </script>

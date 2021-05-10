@@ -1,9 +1,15 @@
 <template>
-  <ion-page>
+  <ion-page>  
+     <ion-header>
+        <ion-toolbar>
+          <ion-buttons slot="start">
+            <ion-back-button></ion-back-button>
+          </ion-buttons>
+          <ion-title class="no-padding faq-header">Häufig gestellte Fragen</ion-title>
+        </ion-toolbar>
+      </ion-header>
     <ion-content>
     <div class="faq-content">
-        <p class="header-text">Häufig gestellte Fragen</p>
-        <div class="selfmade-br"></div>
         <p class="faq-question">Was ist <span class="prim-color-strong">Mind-Match</span> ?</p>
         <p class="faq-answer">Mind-Match ist eine <span class="prim-color-strong">Mobile-App</span> welche deine Antworten zu Aussagen, 
             mit Antworten anderer Nutzer vergleicht. Mit dem Ziel Mitmenschen zu 
@@ -27,22 +33,17 @@
         <p class="faq-answer"><span class="prim-color-strong">Nein.</span> Allerdings benötigt die App, um im vollem Umfang genutzt 
             werden zu können, <span class="prim-color-strong">Internetzugang</span>.</p>
     </div>
-      <ion-fab vertical="bottom" horizontal="start" slot="fixed">
-        <ion-fab-button router-link="/home/">
-            <p class="fab-text">back</p>
-        </ion-fab-button>
-      </ion-fab>
     </ion-content>
   </ion-page>
 </template>
 
 <script>
 import {
-  IonPage, IonContent, IonFab, IonFabButton,
+  IonPage, IonContent,
 } from "@ionic/vue";
 export default {
   components: { 
-    IonPage, IonContent, IonFab, IonFabButton
+    IonPage, IonContent
   }
 }
 </script>

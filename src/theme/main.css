@@ -80,14 +80,16 @@
       max-width: 30px;
       margin: 0;
   }
-  .logout p {
-      margin: auto;
+  .logout-card {
+    --background: #d4b486;
+    font-weight: 700;
+    text-align: center;
   }
 
   .faq-header {
-    text-align: start;
+    text-align: center;
     font-weight: 900;
-    font-size: 26px;
+    font-size: 20px;
     color: #000;
     padding: 0;
 }
@@ -166,8 +168,9 @@
     height: 2.2em;
     font-weight: 900;
     font-size: 1.5em;
-    width: 60%;
-    max-width: 260px;
+    width: auto;
+    max-width: 460px;
+    min-width: 320px;
     font-family: 'Gill Sans', 'Gill Sans MT', sans-serif;
   }
   #container .button-login {
@@ -178,7 +181,7 @@
   }
   #container .button-faq {
     margin: 60px auto 12px;
-    width: 50%;
+    width: auto;
     color: #000;
     height: 1.8em;
     font-weight: 600;
