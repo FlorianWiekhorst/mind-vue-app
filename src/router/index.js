@@ -1,4 +1,4 @@
-import { createRouter, createWebHistory } from '@ionic/vue-router';
+import { createRouter, createWebHistory } from '@ionic/vue-router'
 import Home from '../views/Home.vue'
 import Dash from '../views/Dash.vue'
 import Faq from '../views/Faq.vue'
@@ -12,10 +12,31 @@ import Feedback from '../views/Feedback.vue'
 import Forgotpw from '../views/Forgotpw.vue'
 import Member from '../views/Member.vue'
 
+import Vue from 'vue'
+import VueRouter from 'vue-router'
+
+Vue.use(VueRouter)
+import { auth } from '../main'
+
+var guard = function (next) {
+  try {
+      if (auth.currentUser) {
+          next();
+      }
+      else {
+          next("/");
+      }
+  }
+  catch (error) {
+      next("/");
+  }
+};
+
 const routes = [
   {
     path: '/',
-    redirect: '/home'
+    redirect: '/home',
+    component: () => import('@/views/Authentication.vue')
   },
   {
     path: '/home',
@@ -25,7 +46,8 @@ const routes = [
   {
     path: '/dash',
     name: 'Dash',
-    component: Dash
+    component: Dash,
+    beforeEnter: guard
   },
   {
     path: '/faq',

@@ -24,6 +24,19 @@ import '@ionic/vue/css/display.css';
 import './theme/variables.css';
 import './theme/main.css';
 
+import firebase from 'firebase'
+const firebaseConfig = {  
+    apiKey: "AIzaSyBsyx6obn34Hd3mJfVj8Qz1w60995U6OQA",
+    authDomain: "mind-vue-app.firebaseapp.com",
+    projectId: "mind-vue-app",
+    storageBucket: "mind-vue-app.appspot.com",
+    messagingSenderId: "670476557551",
+    appId: "1:670476557551:web:5601f82e23429b029d0f1a"
+  };
+firebase.initializeApp(firebaseConfig);
+export const db = firebase.firestore();
+export const auth = firebase.auth();
+
 const app = createApp(App)
   .use(IonicVue)
   .use(router);
